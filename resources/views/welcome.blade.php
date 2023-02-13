@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Peminjaman Buku</title>
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layouts.app')
+@section('main')
+        <div class="position-absolute top-50 start-50 translate-middle ">
+            <span class="fs-5 fw-semibold center-group">perpustakaan</span>
+            <br>
+            (login terlebih dahulu)
+        </div>
+@endsection
