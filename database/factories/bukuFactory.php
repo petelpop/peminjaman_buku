@@ -17,8 +17,8 @@ class bukuFactory extends Factory
     public function definition()
     {
         return [
-            'nama' => $this -> faker -> name(),
-            'nama_buku' => $this -> faker -> sentence(),
+            'name' => $this -> faker -> name(),
+            'book_name' => $this -> faker -> sentence(),
             'status' => $this -> faker -> randomNumber(2) 
         ];
     }
