@@ -45,6 +45,16 @@ class BookController extends Controller
     }
 
     public function update(Request $request, $id){
+        $request->validate([
+            'name' => ['required'],
+            'book_name' => ['required'],
+            'status' => ['required'],
+        ],[
+            'name.required' => 'nama harus diisi!',
+            'book_name.required' => 'nama buku harus diisi!',
+            'status.required' => 'status harus diisi!',
+        ]);
+
         $data = Book::find($id);
         $data->update([
             'name' => $request->name,
