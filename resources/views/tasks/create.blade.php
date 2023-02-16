@@ -34,12 +34,12 @@
             @enderror
             </div>
             <div class="mb-3">
-              <label for="" class="form-label">Status</label>
-              <select name="" id="">
-                <option value="">Sudah Dikembalikan</option>
-                <option value="">belum Dikembalikan</option>
+              <select name="status" id="">
+                <option>{{old('status')}}</option>
+                <option>Sudah Dikembalikan</option>
+                <option>belum Dikembalikan</option>
               </select>
-              <input name="status" class="form-control" value="{{ old('status') }}">
+              {{-- <input name="status" class="form-control" value="{{ old('status') }}"> --}}
               @error('status')
               <span class="text-danger">
                 {{ $message }}

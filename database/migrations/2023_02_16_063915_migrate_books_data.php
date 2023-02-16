@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('book_name');
-            $table->string('status');
+            $table->enum('status',['sudah dikembalikan', 'belum dikembalikan']);
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
