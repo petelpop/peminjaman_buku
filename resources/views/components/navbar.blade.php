@@ -6,12 +6,12 @@
             </ul>
             <div class="text-end">
                 @guest
-                <a href="" class="btn btn-warning me-2">Login</a>
-                <a href="" class="btn btn-primary">Sign-up</a>
+                <a href="{{ route('login') }}" class="btn btn-warning me-2">Login</a>
+                <a href="{{ route('register') }}" class="btn btn-primary">Sign-up</a>
                 @else
-                <a href="" class="btn btn-outline-danger me-2" onclick="event.preventDefault(); document.getElementById
-                    ('logout-form').submit();">logout</a>
-                <form action="" id="logout-form" method="POST">
+                <a href="{{ route('logout') }}" class="btn btn-outline-danger me-2" onclick="event.preventDefault(); document.getElementById
+                    ('logout-form').submit();">logout  {{ Auth::user()->name }}</a>
+                <form action="{{ route('logout') }}" id="logout-form" method="POST">
                     @csrf
                 </form>
                 @endguest
