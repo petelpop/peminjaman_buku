@@ -36,7 +36,7 @@
             <div class="mb-3">
               <select name="status" id="">
                 <option>{{old('status')}}</option>
-                <option>Sudah Dikembalikan</option>
+                {{-- <option>Sudah Dikembalikan</option> --}}
                 <option>belum Dikembalikan</option>
               </select>
               {{-- <input name="status" class="form-control" value="{{ old('status') }}"> --}}
